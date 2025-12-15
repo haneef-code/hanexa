@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Hanexa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">HAN<span>EXA</span></a>
+            <div class="hamburger">☰</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="join.html" class="nav-link btn btn-primary" style="padding: 8px 20px;">Join Network</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px;">
+        <div class="container" style="max-width: 800px;">
+            <a href="blog.html" style="color: var(--neon-cyan); margin-bottom: 20px; display: inline-block;">← Back to
+                Blog</a>
+
+            <div id="blog-content">
+                <!-- Content will be loaded here dynamically -->
+                <h1 class="fade-in-up" style="font-size: 2.5rem; margin-bottom: 10px;">Loading...</h1>
+            </div>
+
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <h3 class="mb-4">Related Articles</h3>
+                <div class="grid-3" style="grid-template-columns: 1fr 1fr;">
+                    <div class="card" style="padding: 20px;">
+                        <h4>Maximizing ROI with Meta Ads</h4>
+                        <a href="blog-single.html?id=2" style="color: var(--neon-cyan);">Read Now</a>
+                    </div>
+                    <div class="card" style="padding: 20px;">
+                        <h4>Why Mobile First Matters</h4>
+                        <a href="blog-single.html?id=3" style="color: var(--neon-cyan);">Read Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">HAN<span>EXA</span></a>
+                    <p style="margin-top: 15px; color: #888;">
+                        Baba Pora Zoonimar<br>
+                        Srinagar, Kashmir 190011
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:haneefrather12@gmail.com">haneefrather12@gmail.com</a></li>
+                        <li><a href="tel:+917006505391">+91 70065 05391</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Hanexa Network. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917006505391" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        const blogPosts = {
+            'hanexa': {
+                title: "The Hanexa Revolution",
+                date: "Dec 01, 2025",
+                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">Hanexa is not just a network; it's a movement. We are redefining what it means to be a digital partner in the modern age. By combining cutting-edge technology with deep industry expertise, we empower businesses to achieve more.</p>
+                    <h2 style="color: var(--neon-purple); margin-top: 40px;">Our Mission</h2>
+                    <p style="margin-bottom: 20px;">To provide accessible, high-quality digital services to businesses of all sizes. From startups to enterprises, we believe everyone deserves a world-class digital presence.</p>
+                    <h2 style="color: var(--neon-purple); margin-top: 40px;">Why Choose Hanexa?</h2>
+                    <p style="margin-bottom: 20px;">We don't just build websites; we build relationships. Our team is dedicated to your success, offering 24/7 support and continuous optimization.</p>
+                `
+            },
+            '1': {
+                title: "The Future of Web Development",
+                date: "Nov 25, 2025",
+                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">The digital landscape is evolving at an unprecedented pace. As we move further into 2025, the technologies and methodologies we use to build the web are transforming.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">AI-Driven Development</h2>
+                    <p style="margin-bottom: 20px;">Artificial Intelligence is no longer just a buzzword; it's a core component of the development workflow. Tools like GitHub Copilot and advanced LLMs are helping developers write cleaner, more efficient code faster than ever before.</p>
+                `
+            },
+            '2': {
+                title: "Maximizing ROI with Meta Ads",
+                date: "Nov 20, 2025",
+                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">In the crowded digital marketplace, getting your message heard is harder than ever. Meta Ads offer a powerful way to cut through the noise.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Targeting is Key</h2>
+                    <p style="margin-bottom: 20px;">The real power of Meta Ads lies in their targeting capabilities. By defining your audience precisely, you can ensure every dollar spent brings you closer to a sale.</p>
+                `
+            },
+            '3': {
+                title: "Why Mobile First Matters",
+                date: "Nov 15, 2025",
+                image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">With over 60% of web traffic coming from mobile devices, designing for mobile first is no longer optional.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">User Experience</h2>
+                    <p style="margin-bottom: 20px;">A mobile-first approach ensures that the most critical content is accessible to the majority of your users. It forces you to prioritize what truly matters.</p>
+                `
+            },
+            '4': {
+                title: "The Power of Short-Form Video",
+                date: "Nov 10, 2025",
+                image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">TikTok, Reels, and Shorts have changed the way we consume content. Short-form video is now the king of engagement.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Capturing Attention</h2>
+                    <p style="margin-bottom: 20px;">You have seconds to capture a viewer's attention. Short-form video forces you to be concise, creative, and impactful.</p>
+                `
+            },
+            '5': {
+                title: "Building a Strong Brand Identity",
+                date: "Nov 05, 2025",
+                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">Your brand is more than just a logo. It's the feeling people get when they interact with your business.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Consistency</h2>
+                    <p style="margin-bottom: 20px;">Consistency across all touchpoints builds trust. From your website to your social media, your brand voice and visual identity should be unified.</p>
+                `
+            },
+            '6': {
+                title: "SEO Strategies for 2025",
+                date: "Oct 28, 2025",
+                image: "https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">SEO is constantly evolving. What worked yesterday might not work today.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Content Quality</h2>
+                    <p style="margin-bottom: 20px;">Google's algorithms are getting smarter. They prioritize high-quality, helpful content over keyword-stuffed pages.</p>
+                `
+            },
+            '7': {
+                title: "Why Your Business Needs an App",
+                date: "Oct 20, 2025",
+                image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">Apps offer a level of engagement that websites simply can't match.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Loyalty</h2>
+                    <p style="margin-bottom: 20px;">An app puts your business on your customer's home screen. It allows for push notifications and personalized experiences that drive loyalty.</p>
+                `
+            },
+            '8': {
+                title: "AI in Digital Marketing",
+                date: "Oct 15, 2025",
+                image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200",
+                content: `
+                    <p style="margin-bottom: 20px;">AI is revolutionizing marketing. From personalized recommendations to automated ad bidding, AI is making marketing more efficient and effective.</p>
+                    <h2 style="color: var(--neon-cyan); margin-top: 40px;">Data-Driven Decisions</h2>
+                    <p style="margin-bottom: 20px;">AI allows marketers to analyze vast amounts of data to make informed decisions. It takes the guesswork out of marketing.</p>
+                `
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const blogId = urlParams.get('id');
+        const contentDiv = document.getElementById('blog-content');
+
+        if (blogId && blogPosts[blogId]) {
+            const post = blogPosts[blogId];
+            document.title = `${post.title} | Hanexa Blog`;
+            contentDiv.innerHTML = `
+                <h1 class="fade-in-up" style="font-size: 2.5rem; margin-bottom: 10px;">${post.title}</h1>
+                <div class="fade-in-up" style="display: flex; align-items: center; gap: 15px; margin-bottom: 30px; color: #888;">
+                    <span><i class="fas fa-user"></i> Haneef</span>
+                    <span><i class="fas fa-calendar"></i> ${post.date}</span>
+                </div>
+                <img src="${post.image}" alt="${post.title}" class="fade-in-up" style="width: 100%; border-radius: 15px; margin-bottom: 40px;">
+                <div class="fade-in-up" style="font-size: 1.1rem; color: #ccc; line-height: 1.8;">
+                    ${post.content}
+                </div>
+            `;
+        } else {
+            contentDiv.innerHTML = `
+                <h1 class="fade-in-up" style="font-size: 2.5rem; margin-bottom: 10px;">Blog Post Not Found</h1>
+                <p>Sorry, the blog post you are looking for does not exist.</p>
+                <a href="blog.html" class="btn btn-primary" style="margin-top: 20px;">Back to Blog</a>
+            `;
+        }
+    </script>
+</body>
+
+</html>

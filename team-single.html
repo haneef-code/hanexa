@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Details | Hanexa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">HAN<span>EXA</span></a>
+            <div class="hamburger">☰</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="team.html" class="nav-link active">Team</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="join.html" class="nav-link btn btn-primary" style="padding: 8px 20px;">Join Network</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px;">
+        <div class="container">
+            <div id="member-details" class="team-single-container fade-in-up">
+                <!-- Content will be populated by JS -->
+                <div style="text-align: center; color: var(--text-muted);">Loading...</div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="team.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">HAN<span>EXA</span></a>
+                    <p style="margin-top: 15px; color: #888;">
+                        Baba Pora Zoonimar<br>
+                        Srinagar, Kashmir 190011
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:haneefrather12@gmail.com">haneefrather12@gmail.com</a></li>
+                        <li><a href="tel:+917006505391">+91 70065 05391</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Hanexa Network. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917006505391" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        const teamData = {
+            'haneef': {
+                name: 'Haneef',
+                role: 'Founder & App Developer',
+                img: 'haneef.jpg',
+                location: 'Srinagar',
+                phone: '7006505391',
+                email: 'haneefrather12@gmail.com',
+                bio: 'The visionary behind Hanexa, driving innovation and excellence in every project. Expert in App Development.',
+                joining: 'Founder'
+            },
+            'suhail': {
+                name: 'Suhail',
+                role: 'CEO & Editor',
+                img: 'https://ui-avatars.com/api/?name=Suhail&background=bc13fe&color=fff&size=300',
+                location: 'Remote',
+                phone: '7006687789',
+                email: 'suhailwani733@gmail.com',
+                bio: 'Leading the team with strategic direction and a focus on client success. Ensuring operations run smoothly.',
+                joining: '2023'
+            },
+            'yarnica': {
+                name: 'Yarnika',
+                role: 'Managing Editor & Video Editor',
+                img: 'yarnica.png',
+                location: 'Banaras, Uttar Pradesh',
+                phone: '9140397579 (WhatsApp Only)',
+                email: 'yarnikaverma9@gmail.com',
+                bio: 'Overseeing content quality and editorial strategy. Bringing stories to life with precision and creativity.',
+                joining: '2025'
+            },
+            'farzaanullah': {
+                name: 'Farzaanullah',
+                role: 'Full Stack Developer',
+                img: 'https://ui-avatars.com/api/?name=Farzaanullah&background=00ddeb&color=fff&size=300',
+                location: 'Madhya Pradesh (MP)',
+                phone: '+91 98xxx xxxxx',
+                email: 'farzaan@hanexa.com',
+                bio: 'Experienced Full Stack Developer specializing in MERN stack and scalable web architectures.',
+                joining: 'Early 2024'
+            },
+            'vipin': {
+                name: 'Vipin',
+                role: 'Video Editor',
+                img: 'https://ui-avatars.com/api/?name=Vipin&background=ff00ff&color=fff&size=300',
+                location: 'Uttar Pradesh (UP)',
+                phone: '+91 87xxx xxxxx',
+                email: 'vipin@hanexa.com',
+                bio: 'Creative video editor with a knack for storytelling and visual effects. Turns raw footage into magic.',
+                joining: 'Mid 2024'
+            },
+            'amaan': {
+                name: 'Amaan',
+                role: 'Meta Ads Specialist',
+                img: 'https://ui-avatars.com/api/?name=Amaan&background=bc13fe&color=fff&size=300',
+                location: 'Nishaat, Kashmir',
+                phone: '+91 70xxx xxxxx',
+                email: 'amaan@hanexa.com',
+                bio: 'Expert in Meta advertising strategies, optimizing campaigns for maximum ROI and brand visibility.',
+                joining: 'Late 2023'
+            },
+            'pankaj': {
+                name: 'Pankaj',
+                role: 'App Developer',
+                img: 'https://ui-avatars.com/api/?name=Pankaj&background=00ddeb&color=fff&size=300',
+                location: 'Mumbai',
+                phone: '+91 99xxx xxxxx',
+                email: 'pankaj@hanexa.com',
+                bio: 'Passionate Android and Flutter developer dedicated to building smooth and user-friendly mobile applications.',
+                joining: '2024'
+            },
+            'rohit': {
+                name: 'Rohit',
+                role: 'Video Editor',
+                img: 'https://ui-avatars.com/api/?name=Rohit&background=ff00ff&color=fff&size=300',
+                location: 'Rajasthan',
+                phone: '+91 91xxx xxxxx',
+                email: 'rohit@hanexa.com',
+                bio: 'Skilled in post-production and color grading, ensuring every video meets high aesthetic standards.',
+                joining: '2024'
+            },
+            'maneesh': {
+                name: 'Maneesh',
+                role: 'Graphic Designer',
+                img: 'https://ui-avatars.com/api/?name=Maneesh&background=bc13fe&color=fff&size=300',
+                location: 'Mumbai',
+                phone: '+91 88xxx xxxxx',
+                email: 'maneesh@hanexa.com',
+                bio: 'Visual artist creating stunning graphics, logos, and brand identities that stand out.',
+                joining: '2023'
+            },
+            'nihal-sain': {
+                name: 'Nihal Sain',
+                role: 'Video Editor',
+                img: 'https://ui-avatars.com/api/?name=Nihal+Sain&background=00ddeb&color=fff&size=300',
+                location: 'Delhi',
+                phone: '+91 95xxx xxxxx',
+                email: 'nihal@hanexa.com',
+                bio: 'Focuses on dynamic cuts and motion graphics to create engaging video content for social media.',
+                joining: '2024'
+            },
+            'arshu': {
+                name: 'Arshu',
+                role: 'Graphic Designer',
+                img: 'https://ui-avatars.com/api/?name=Arshu&background=ff00ff&color=fff&size=300',
+                location: 'Rajasthan',
+                phone: '+91 90xxx xxxxx',
+                email: 'arshu@hanexa.com',
+                bio: 'Specializes in social media creative design and illustration, adding artistic flair to our projects.',
+                joining: '2024'
+            },
+            'vikram': {
+                name: 'Vikram',
+                role: 'UI/UX Designer',
+                img: 'https://ui-avatars.com/api/?name=Vikram&background=bc13fe&color=fff&size=300',
+                location: 'Bangalore',
+                phone: '+91 99xxx xxxxx',
+                email: 'vikram@hanexa.com',
+                bio: 'Designing intuitive and beautiful user interfaces that provide seamless user experiences.',
+                joining: '2024'
+            },
+            'anjali': {
+                name: 'Anjali',
+                role: 'Content Writer',
+                img: 'https://ui-avatars.com/api/?name=Anjali&background=00ddeb&color=fff&size=300',
+                location: 'Pune',
+                phone: '+91 88xxx xxxxx',
+                email: 'anjali@hanexa.com',
+                bio: 'Crafting compelling narratives and copy that engage readers and drive conversions.',
+                joining: '2024'
+            },
+            'sameer': {
+                name: 'Sameer',
+                role: 'SEO Specialist',
+                img: 'https://ui-avatars.com/api/?name=Sameer&background=ff00ff&color=fff&size=300',
+                location: 'Delhi',
+                phone: '+91 97xxx xxxxx',
+                email: 'sameer@hanexa.com',
+                bio: 'Optimizing web content to improve search engine rankings and drive organic traffic.',
+                joining: '2023'
+            },
+            'priya': {
+                name: 'Priya',
+                role: 'Digital Marketer',
+                img: 'https://ui-avatars.com/api/?name=Priya&background=bc13fe&color=fff&size=300',
+                location: 'Kolkata',
+                phone: '+91 86xxx xxxxx',
+                email: 'priya@hanexa.com',
+                bio: 'Strategizing and executing comprehensive digital marketing campaigns across various channels.',
+                joining: '2024'
+            },
+            'arjun': {
+                name: 'Arjun',
+                role: 'Backend Developer',
+                img: 'https://ui-avatars.com/api/?name=Arjun&background=00ddeb&color=fff&size=300',
+                location: 'Hyderabad',
+                phone: '+91 98xxx xxxxx',
+                email: 'arjun@hanexa.com',
+                bio: 'Architecting robust server-side logic and databases to power high-performance applications.',
+                joining: '2024'
+            },
+            'meera': {
+                name: 'Meera',
+                role: 'HR Manager',
+                img: 'https://ui-avatars.com/api/?name=Meera&background=ff00ff&color=fff&size=300',
+                location: 'Mumbai',
+                phone: '+91 91xxx xxxxx',
+                email: 'meera@hanexa.com',
+                bio: 'Fostering a positive work culture and managing talent acquisition and employee relations.',
+                joining: '2023'
+            },
+            'zain': {
+                name: 'Zain',
+                role: 'Flutter Developer',
+                img: 'https://ui-avatars.com/api/?name=Zain&background=bc13fe&color=fff&size=300',
+                location: 'Kashmir',
+                phone: '+91 70xxx xxxxx',
+                email: 'zain@hanexa.com',
+                bio: 'Building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
+                joining: '2024'
+            },
+            'kavita': {
+                name: 'Kavita',
+                role: 'Content Strategist',
+                img: 'https://ui-avatars.com/api/?name=Kavita&background=00ddeb&color=fff&size=300',
+                location: 'Delhi',
+                phone: '+91 99xxx xxxxx',
+                email: 'kavita@hanexa.com',
+                bio: 'Planning and managing content marketing strategies to aligned with business goals.',
+                joining: '2024'
+            },
+            'rahul': {
+                name: 'Rahul',
+                role: 'Sales Executive',
+                img: 'https://ui-avatars.com/api/?name=Rahul&background=ff00ff&color=fff&size=300',
+                location: 'Bangalore',
+                phone: '+91 95xxx xxxxx',
+                email: 'rahul@hanexa.com',
+                bio: 'Driving business growth by identifying new opportunities and building strong client relationships.',
+                joining: '2024'
+            },
+            'sara': {
+                name: 'Sara',
+                role: 'Social Media Manager',
+                img: 'https://ui-avatars.com/api/?name=Sara&background=bc13fe&color=fff&size=300',
+                location: 'Chennai',
+                phone: '+91 88xxx xxxxx',
+                email: 'sara@hanexa.com',
+                bio: 'Managing social media presence and engaging with the community to build brand loyalty.',
+                joining: '2024'
+            },
+            'dev': {
+                name: 'Dev',
+                role: 'Video Editor',
+                img: 'https://ui-avatars.com/api/?name=Dev&background=00ddeb&color=fff&size=300',
+                location: 'Punjab',
+                phone: '+91 90xxx xxxxx',
+                email: 'dev@hanexa.com',
+                bio: 'Creating compelling video content that tells a story and resonates with the audience.',
+                joining: '2024'
+            },
+            'ishaan': {
+                name: 'Ishaan',
+                role: 'Graphic Designer',
+                img: 'https://ui-avatars.com/api/?name=Ishaan&background=ff00ff&color=fff&size=300',
+                location: 'Gujarat',
+                phone: '+91 97xxx xxxxx',
+                email: 'ishaan@hanexa.com',
+                bio: 'Designing visual concepts that inspire, inform, and captivate consumers.',
+                joining: '2024'
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const memberId = params.get('id');
+        const container = document.getElementById('member-details');
+
+        if (memberId && teamData[memberId]) {
+            const member = teamData[memberId];
+            container.innerHTML = `
+                <div class="team-single-row">
+                    <div class="team-single-img-col">
+                         <div class="img-wrapper-large">
+                            <img src="${member.img}" alt="${member.name}" class="team-single-img">
+                         </div>
+                    </div>
+                    <div class="team-single-info-col">
+                        <h1 class="text-cyan">${member.name}</h1>
+                        <h3 class="role-text-large">${member.role}</h3>
+                        <div class="details-box">
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> ${member.location}</p>
+                            <p><i class="fas fa-calendar-alt"></i> <strong>Joined:</strong> ${member.joining}</p>
+                        </div>
+                        <h4 class="mt-4 text-purple">About</h4>
+                        <p class="bio-text">${member.bio}</p>
+                    </div>
+                </div>
+            `;
+        } else {
+            container.innerHTML = '<div style="text-align:center;"><h2>Member not found</h2><p>Please return to the team page.</p></div>';
+        }
+    </script>
+</body>
+
+
+</html>
